@@ -1,0 +1,77 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<img src="Banner.PNG" width="100%">
+<div class="w3-bar w3-black">
+ <button class="w3-bar-item w3-button" onclick="opet('home')">Home</button>
+ <button class="w3-bar-item w3-button" onclick="opet('profile')">Profile</button>
+ <button class="w3-bar-item w3-button" onclick="opet('ML')">Mobile Legends</button>
+ <button class="w3-bar-item w3-button" onclick="opet('FF')">Free Fire</button>
+ <button class="w3-bar-item w3-button" onclick="opet('PUBG')">PUBG</button>
+ <button class="w3-bar-item w3-button" onclick="opet('valo')">Valorant</button>
+ 
+
+</div>
+    <div id="home" class="w3-display-container w3-deep-purple w3-animate-top diamond"  
+    style="padding bottom :10%,*">
+        <div class="w3-display-bottomleft w3-display-hover"></div>
+        <div class="w3-display-bottomright w3-display-hover"></div>    
+        <center>
+    <h2 style="font-family: Times New Roman">Server Sedang Sibuk Pemesanan Belum Bisa Dilakukan</h2>
+        
+        <img src="MobileLegend.png">
+        <img src="FreeFire1.png" width="20%">
+        <img src="Pubg.png" width="20%">
+        <img src="Valo.png" width="20%">
+    </div>
+<div id="profile" class="w3-container w3-monospace w3-animate-top diamond" style="display:none">
+        <center>
+    <h4> NIM : 10121103 </h4>
+    <h4> Muhamad Farhan Fadilah </h4>
+    <h4> IF-3 </h4>
+    <img src="paan.jpg" width="300px" height="">
+</div>
+<div id="ML" class="w3-container w3-deep-purple w3-monospace w3-animate-right diamond" style="display:none">
+    <center>
+ <h2 > Mobile Legends</h2>
+ <img src="MobileLegend1.jpg">
+ <p>Mobile Legends: Bang Bang atau ML merupakan game MOBA yang dirilis oleh Moontoon. Game ini bisa dimainkan di ponsel Android maupun IOS. Dalam game MOBA ini akan ada 10 pemain yang akan dibagi menjadi 2 tim.
+    Aturan mainnya yakni 5 vs 5. Rata-rata permainan dalam 1 game yakni sekitar 15-20 menit. Setiap pemain bisa memilih 1 hero dari puluhan daftar hero yang tersedia.</p>
+</div>
+<div id="FF" class="w3-container w3-deep-purple w3-monospace w3-animate-left diamond" style="display:none">
+    <center>
+ <h2>Free Fire</h2>
+ <img src="FreeFire.png">
+ <p>Free fire juga sering dimaknai sebagai salah salah satu esports yang menggabungkan dua genre games yaitu battle royale dengan TPS (Third Person Shooter). Sebagai games dengan konsep battle alias perang,
+    free fire bisa dimainkan 50 pemain dalam landscape pertandingan yang luas</p>
+</div>
+<div id="PUBG" class="w3-container w3-deep-purple w3-monospace diamond w3-animate-bottom" style="display:none">
+    <center>
+ <h2>Player Unknowns Battle Grounds</h2>
+ <img src="Pubg1.png">
+ <p>PUBG sendiri adalah singkatan dari PlayerUnknowns BattleGrounds yang merupakan game perang dengan genre FPS atau First Person Shooter dan online multiplayer 
+(lebih dari satu pemain), dimana semua pemain yang ada harus saling membunuh sampai hanya menyisakan satu pemain yang menjadi pemenangnya.
+Sebenarnya inti dari game PUBG ini bukanlah menjadi pemain dengan perolehan skor terbanyak dalam membunuh pemain lain, 
+tetapi menjadi pemain yang dapat membunuh pemain terakhir.</p>
+</div>
+<div id="valo" class="w3-container w3-deep-purple w3-monospace diamond w3-animate-top" style="display:none">
+    <center>
+ <h2>Valorant</h2>
+        <img src="Valo1.png">
+ <p> Valorant adalah penembak taktis berbasis tim dan penembak orang pertama yang diatur dalam dekat masa depan.
+    Pemain bermain sebagai salah satu dari sekumpulan agen, karakter yang dirancang berdasarkan beberapa negara dan budaya di seluruh dunia. </p>
+</div>
+<script>
+function opet(barang) {
+ var i;
+ var x = document.getElementsByClassName("diamond");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(barang).style.display = "block"; 
+}
+</script>
+</body>
+</html>
